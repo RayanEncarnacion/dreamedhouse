@@ -1,0 +1,87 @@
+@use "variables";
+
+// Color clases
+.drk {
+  color: variables.$drk-clr;
+}
+
+.lg {
+  color: variables.$lg-clr;
+}
+
+.lg-bg {
+  background-color: variables.$lg-clr;
+}
+
+.md-bg {
+  background-color: variables.$md-clr;
+}
+.drk-bg {
+  background-color: variables.$drk-clr;
+}
+
+.accent {
+  color: variables.$accent-clr;
+}
+
+.lg-accent {
+  color: variables.$lg-accent-clr;
+}
+
+// Padding and margin classes
+.sides-padding {
+  padding-right: 5%;
+  padding-left: 5%;
+}
+
+.tb-padding {
+  padding-top: 4em;
+  padding-bottom: 4em;
+}
+
+.container-margin {
+  margin-top: 4em;
+}
+
+// Sections classes
+.section-title {
+  text-align: center;
+  color: variables.$accent-clr;
+}
+
+// Layout classes
+
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+// Header darken overlay
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.65);
+  z-index: -5;
+}
+
+// Btn
+
+.menu-btn {
+  color: variables.$lg-clr;
+  border: none;
+  outline: none;
+  padding: 2px 8px;
+  font-size: 1.2em;
+  background-color: transparent;
+}
+
+.accent-btn {
+  padding: 8px 25px;
+  border: none;
+  border-radius: 2px;
+  background-color: variables.$accent-clr;
+}

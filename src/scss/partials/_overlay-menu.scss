@@ -1,0 +1,38 @@
+@use "variables";
+
+.menu-overlay {
+  background-color: variables.$lg-clr;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50%;
+  height: 100vh;
+  transform: translateX(105%);
+  transition: transform 0.5s ease-in-out;
+
+  .close-menu {
+    position: absolute;
+    top: 12px;
+    right: 15px;
+    color: variables.$drk-clr;
+    font-size: 1.5em;
+  }
+
+  .menu-list {
+    margin: 6em 0 0;
+    text-align: center;
+    padding: 0;
+
+    li {
+      margin-top: 1em;
+      list-style-type: none;
+      font-size: 1.2em;
+      font-weight: bold;
+
+      .menu-link {
+        text-decoration: none;
+        color: variables.$drk-clr;
+      }
+    }
+  }
+}

@@ -1,0 +1,40 @@
+@use "variables";
+
+footer {
+  width: 100vw;
+  flex-direction: column;
+  gap: 1.5em;
+
+  .social-media {
+    color: variables.$accent-clr;
+    font-size: 1.5em;
+    gap: 1.5em;
+
+    img {
+      object-fit: cover;
+      width: 100%;
+      max-width: 30px;
+    }
+  }
+
+  .footer-links {
+    margin-top: 2em;
+
+    ul {
+      text-align: center;
+      padding: 0;
+
+      li {
+        list-style: none;
+
+        margin-bottom: 0.5em;
+
+        a {
+          text-decoration: none;
+          color: variables.$lg-clr;
+          font-size: 1.1em;
+        }
+      }
+    }
+  }
+}

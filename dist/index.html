@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DreamedHouse</title>
+    <!-- Font awesome CDN -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <!--  Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+    <!-- CSS styles -->
+    <link rel="stylesheet" href="/index.34ebc287.css">
+    <!-- JavaScript -->
+    <script src="/index.10fa75bc.js" defer=""></script>
+  </head>
+  <body>
+    <div class="app-container">
+      <header class="sides-padding">
+        <nav>
+          <h1 class="logo">DreamedHouse</h1>
+          <button class="menu-btn open-menu">
+            <i class="fas fa-bars"></i>
+          </button>
+          <div class="menu-overlay">
+            <button class="close-menu menu-btn">
+              <i class="far fa-window-close"></i>
+            </button>
+            <ul class="menu-list">
+              <li><a class="menu-link" href="/">Home</a></li>
+              <li><a class="menu-link" href="#properties">Properties</a></li>
+              <li><a class="menu-link" href="#agents">Agents</a></li>
+              <li><a class="menu-link" href="#about">About</a></li>
+              <li><a class="menu-link" href="#contact">Contact</a></li>
+            </ul>
+          </div>
+        </nav>
+
+        <div class="header-text">
+          <h2>Find and rent or buy your dreamed house.</h2>
+          <p>
+            We offer the bests offers in rental properties in the entire country
+            with a big range of prices and features.
+          </p>
+        </div>
+        <div class="overlay"></div>
+      </header>
+
+      <!-- How it works section -->
+
+      <section id="first-section" class="lg-bg sides-padding tb-padding">
+        <h2 class="section-title">How it works</h2>
+        <div class="container-margin flex cards-container">
+          <div class="flex-card flex">
+            <i class="fas fa-laptop-house"></i>
+            <h3>Find a property</h3>
+            <p>Go through our options and find the one you desire.</p>
+          </div>
+          <div class="flex-card flex">
+            <i class="fas fa-hand-holding-usd"></i>
+            <h3>Buy a property</h3>
+            <p>Easy and accesible ways to pay your house.</p>
+          </div>
+          <div class="flex-card flex">
+            <i class="fas fa-chart-line"></i>
+            <h3>Investing</h3>
+            <p>Invest in your family future by owning your dreamed house.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Properties (Carousel) section -->
+
+      <section class="md-lg sides-padding tb-padding" id="properties">
+        <h2 class="section-title">Properties</h2>
+        <div id="carouselExampleIndicators" class="container-margin carousel slide" data-bs-ride="carousel" data-interval="false">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+          </div>
+
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="carousel-card">
+                <img src="/image1-lg.cdec84ce.jpg" class="d-block w-100" alt="House 1">
+                <p class="property-price">$3,400,000</p>
+                <p>4 beds | 4 baths</p>
+                <address>Lorem ipsum dolor sit amet.</address>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="carousel-card">
+                <img src="/image2-lg.aed7900b.jpg" class="d-block w-100" alt="House 2">
+                <p class="property-price">$1,400,000</p>
+                <p>3 beds | 3 baths</p>
+                <address>Lorem ipsum dolor sit amet.</address>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="carousel-card">
+                <img src="/image3-lg.e5646f08.jpg" class="d-block w-100" alt="House 3">
+                <p class="property-price">$1,200,000</p>
+                <p>3 beds | 2 baths</p>
+                <address>Lorem ipsum dolor sit amet.</address>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="carousel-card">
+                <img src="/image4-lg.81f9d378.jpg" class="d-block w-100" alt="House 4">
+                <p class="property-price">$5,400,000</p>
+                <p>6 beds | 4 baths</p>
+                <address>Lorem ipsum dolor sit amet.</address>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="false">&#11164;</span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="false">
+              &#11166;</span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </section>
+
+      <!-- Agents section -->
+
+      <section id="agents" class="lg-bg sides-padding tb-padding">
+        <h2 class="section-title">Agents</h2>
+        <div class="container-margin flex agents-container">
+          <div class="agent-card">
+            <img src="/Peter-parker.89f075f5.jpg" alt="">
+            <h3>Peter Parker</h3>
+            <p class="lg-accent">Sales Agent</p>
+          </div>
+          <div class="agent-card">
+            <img src="/Mary%20Jane.6738ac74.jpg" alt="">
+            <div class="agent-info">
+              <h3>Mary Jane</h3>
+              <p class="lg-accent">Web developer</p>
+            </div>
+          </div>
+          <div class="agent-card">
+            <img src="/Monica%20Lewinsky.74cd306e.jpg" alt="">
+            <h3>Monica Lewinsky</h3>
+            <p class="lg-accent">Accountant</p>
+          </div>
+          <div class="agent-card">
+            <img src="/Tony-stark.3437a6a4.jpg" alt="">
+            <h3>Tony Stark</h3>
+            <p class="lg-accent">Sales Director</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="md-bg company-info sides-padding tb-padding">
+        <h2 class="section-title">
+          We are the best <strong>Real State</strong> company
+        </h2>
+        <div class="container-margin info-container flex">
+          <p>
+            With more than 50 years giving the best offers in the real state
+            bussinesso
+          </p>
+          <p>
+            This are a few of the best characteristics of our company and we
+            hope that this will be enough to convince you about our service
+            quality and loyalty to our customers.
+          </p>
+          <ul class="flex">
+            <li>Experts at finding the best deals in the entire country</li>
+            <li>
+              We provide the best customer service experience with 24/7 support.
+            </li>
+            <li>
+              You can partner with us and invest in the best real state deals.
+            </li>
+            <li>
+              We bring the best and most reliable assurance plan for each house.
+            </li>
+            <li>
+              The fastest company doing the entire transaction to help you move
+              into the house in the less time possible.
+            </li>
+          </ul>
+          <button class="accent-btn learn-more">Learn more</button>
+        </div>
+      </section>
+
+      <!-- Services section -->
+
+      <section class="lg-bg sides-padding tb-padding" id="services">
+        <h2 class="section-title">Services</h2>
+        <div class="container-margin flex services-card-container">
+          <div class="services-card flex">
+            <i class="fas fa-laptop-house"></i>
+            <div class="card-text">
+              <h3>Search property</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea
+                minus molestias assumenda aliquid, exercitationem est!.
+              </p>
+              <p class="accent-btn">Learn more</p>
+            </div>
+          </div>
+          <div class="services-card flex">
+            <i class="fas fa-hand-holding-usd"></i>
+            <div class="card-text">
+              <h3>Buy property</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea
+                minus molestias assumenda aliquid, exercitationem est!.
+              </p>
+              <p class="accent-btn">Learn more</p>
+            </div>
+          </div>
+          <div class="services-card flex">
+            <i class="fas fa-chart-line"></i>
+            <div class="card-text">
+              <h3>Investing</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea
+                minus molestias assumenda aliquid, exercitationem est!.
+              </p>
+              <p class="accent-btn">Learn more</p>
+            </div>
+          </div>
+          <div class="services-card flex">
+            <i class="fas fa-building"></i>
+            <div class="card-text">
+              <h3>List a property</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea
+                minus molestias assumenda aliquid, exercitationem est!.
+              </p>
+              <p class="accent-btn">Learn more</p>
+            </div>
+          </div>
+          <div class="services-card flex">
+            <i class="fas fa-search"></i>
+            <div class="card-text">
+              <h3>Property location</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea
+                minus molestias assumenda aliquid, exercitationem est!.
+              </p>
+              <p class="accent-btn">Learn more</p>
+            </div>
+          </div>
+          <div class="services-card flex">
+            <i class="fas fa-mobile-alt"></i>
+            <div class="card-text">
+              <h3>Started apps</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea
+                minus molestias assumenda aliquid, exercitationem est!.
+              </p>
+              <p class="accent-btn">Learn more</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Testimonials section -->
+
+      <section id="testimonials" class="md-bg sides-padding tb-padding">
+        <h2 class="section-title">Testimonials</h2>
+        <div id="carouselExampleIndicators2" class="carousel slide" data-bs-ride="carousel" data-interval="false">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="inner-info">
+                <p class="comment">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Possimus laudantium eaque quos?
+                </p>
+                <img src="/face-1.e90fb512.jpg" class="d-block image-1" alt="House 1">
+                <h3 class="accent">Loraine Smith</h3>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="inner-info">
+                <p class="comment">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut,
+                  consequatur! Doloribus, quidem nostrum.
+                </p>
+                <img src="/face-2.f4602cb3.jpg" class="d-block image-2" alt="House 2">
+                <h3 class="accent">Judith Grace</h3>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="inner-info">
+                <p class="comment">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Distinctio, odio!
+                </p>
+                <img src="/face-3.e34acc9f.jpg" class="d-block image-3" alt="House 3">
+                <h3 class="accent">Richard Mille</h3>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="inner-info">
+                <p class="comment">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Doloremque, rem!
+                </p>
+                <img src="/face-4.3fea59d3.jpg" class="d-block image-4" alt="House 4">
+                <h3 class="accent">Barry Bonds</h3>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="false">&#11164;</span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="false">
+              &#11166;</span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </section>
+
+      <!-- Contact section -->
+
+      <section id="contact" class="lg-bg sides-padding tb-padding">
+        <h2 class="section-title">Contact Us</h2>
+        <div class="container-margin">
+          <form class="contact-form">
+            <label class="accent" for="name">Name</label>
+            <input type="text" name="name">
+            <label class="accent" for="email">Email</label>
+            <input type="text" name="email">
+            <label class="accent" for="subject">Subject</label>
+            <input type="text" name="subject">
+            <label class="accent" for="subject">Message</label>
+            <textarea name="message" id="" maxlength="150" cols="30" rows="10" placeholder="Write your message here..."></textarea>
+            <button class="accent-btn">Send Message</button>
+          </form>
+
+          <div class="address-container flex">
+            <div class="address">
+              <p class="accent">Address</p>
+              <address>Lorem ipsum dolor sit amet, USA.</address>
+            </div>
+            <div class="phone">
+              <p class="accent">Phone</p>
+              <span>111-222-333</span>
+            </div>
+            <div class="email">
+              <p class="accent">Email Address</p>
+              <span>dreamedhouseTEST@gmail.com</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Footer section -->
+      <footer id="footer" class="flex drk-bg tb-padding">
+        <div class="social-media flex">
+          <img src="/instagram.72cd8ad9.png" alt="">
+          <img src="/facebook.dfcd835d.png" alt="">
+          <img src="/twitter.9972ce94.png" alt="">
+        </div>
+        <div class="footer-links">
+          <ul class="footer-list">
+            <li><a class="footer-link" href="/">Home</a></li>
+            <li><a class="footer-link" href="#properties">Properties</a></li>
+            <li><a class="footer-link" href="#agents">Agents</a></li>
+            <li><a class="footer-link" href="#about">About</a></li>
+            <li><a class="footer-link" href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,54 @@
+@use "variables";
+
+:root {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: variables.$prm-ft;
+  font-size: 1em;
+  background-color: variables.$lg-clr;
+  color: variables.$drk-clr;
+  overflow-x: hidden;
+}
+
+.logo {
+  font-size: 1.3em;
+  font-weight: 800;
+  font-family: 'Montserrat', sans-serif;
+}
+
+h2 {
+  font-size: 1.7em;
+  font-weight: 600;
+  font-family: variables.$scdr-ft;
+}
+
+h3 {
+  font-size: 1.3em;
+  font-family: variables.$scdr-ft;
+}
+
+p {
+  font-size: 1.1em;
+  font-weight: 400;
+}
+
+.app-container {
+  width: 100vw;
+  overflow-x: hidden;
+}
+
+i:not(.fa-bars, .fa-window-close, .social-icon) {
+  display: block;
+  color: variables.$accent-clr;
+  font-size: 3em;
+}
+
+// Changing BT carousel icon
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-image: none !important;
+  font-size: 1.7em;
+  font-weight: bold;
+}
