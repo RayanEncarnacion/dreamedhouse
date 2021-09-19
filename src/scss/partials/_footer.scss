@@ -4,21 +4,22 @@ footer {
   width: 100vw;
   flex-direction: column;
   gap: 1.5em;
+  padding: 2em 0;
 
   .social-media {
     color: variables.$accent-clr;
     font-size: 1.5em;
-    gap: 1.5em;
+    gap: 1em;
 
     img {
       object-fit: cover;
       width: 100%;
-      max-width: 30px;
+      max-width: 40px;
     }
   }
 
   .footer-links {
-    margin-top: 2em;
+    margin-top: 1em;
 
     ul {
       text-align: center;
@@ -26,13 +27,13 @@ footer {
 
       li {
         list-style: none;
-
-        margin-bottom: 0.5em;
+        margin-bottom: 1em;
 
         a {
           text-decoration: none;
           color: variables.$lg-clr;
-          font-size: 1.1em;
+          font-size: 1.2em;
+          font-weight: bold;
         }
       }
     }

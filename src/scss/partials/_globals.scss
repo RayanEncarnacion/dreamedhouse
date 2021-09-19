@@ -13,37 +13,26 @@ body {
   font-size: 16px;
 }
 
-.logo {
-  font-size: 1.3em;
-  font-weight: 800;
-  font-family: 'Montserrat', sans-serif;
-}
-
 h1 {
-  font-size: 1.8em;
+  font-size: 2em;
   font-weight: 800;
   font-family: variables.$scdr-ft;
 }
 
 h2 {
-  font-size: 1.7em;
+  font-size: 1.75em;
   font-weight: 600;
   font-family: variables.$scdr-ft;
 }
 
 h3 {
-  font-size: 1.3em;
+  font-size: 1.5em;
   font-family: variables.$scdr-ft;
 }
 
 p {
   font-size: 1.1em;
   font-weight: 400;
-}
-
-.app-container {
-  width: 100vw;
-  overflow-x: hidden;
 }
 
 i:not(.fa-bars, .fa-window-close, .social-icon) {

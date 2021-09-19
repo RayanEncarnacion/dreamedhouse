@@ -1,5 +1,16 @@
 @use "variables";
 
+.app-container {
+  width: 100vw;
+  overflow-x: hidden;
+}
+
+.logo {
+  font-size: 1.6em;
+  font-weight: 800;
+  font-family: 'Montserrat', sans-serif;
+}
+
 // Color clases
 .drk {
   color: variables.$drk-clr;
@@ -35,8 +46,8 @@
 }
 
 .tb-padding {
-  padding-top: 4em;
-  padding-bottom: 4em;
+  padding-top: 5em;
+  padding-bottom: 5em;
 }
 
 .container-margin {

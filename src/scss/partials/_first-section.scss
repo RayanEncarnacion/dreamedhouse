@@ -2,18 +2,25 @@
 
 #first-section {
   .cards-container {
-    gap: 2em;
+    row-gap: 2em;
+    column-gap: 2em;
     align-items: center;
     justify-content: center;
     text-align: center;
     max-width: 1140px;
 
     .flex-card {
-      width: 80%;
+      width: 100%;
       margin: 0 auto;
-      max-width: 300px;
+      max-width: 400px;
       flex-direction: column;
-      row-gap: 0.5em;
+      row-gap: 1em;
+      column-gap: 1em;
+
+      p {
+        width: 85%;
+        margin: 0 auto;
+      }
 
       h3 {
         margin-bottom: 0;
