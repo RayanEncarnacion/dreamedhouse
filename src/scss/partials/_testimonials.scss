@@ -11,12 +11,12 @@
 
     & .carousel-control-next,
     & .carousel-control-prev {
-      width: 5%;
+      width: 10%;
       display: grid;
       place-content: center;
       color: #000;
-      opacity: 0.4;
-      font-size: 2.3em;
+      opacity: 0.5;
+      font-size: 2.8em;
     }
 
     .carousel-inner {

@@ -225,8 +225,7 @@ nav .open-menu {
   font-weight: bold;
   font-size: 1.3em;
   color: #1bdae4;
-  margin: 1em 0 0 1rem;
-  font-size: 1rem;
+  margin: 1rem 0 0 1rem;
 }
 #properties .carousel-card address {
   font-size: 0.8em;
@@ -236,14 +235,14 @@ nav .open-menu {
   display: grid;
   place-content: center;
   color: #fff;
-  opacity: 0.8;
-  font-size: 2.3em;
+  opacity: 0.9;
+  font-size: 2.8em;
 }
 #properties .carousel-control-prev {
-  padding-left: 12px;
+  padding-left: 1.5rem;
 }
 #properties .carousel-control-next {
-  padding-right: 12px;
+  padding-right: 1.5rem;
 }
 #properties .carousel-indicators [data-bs-target] {
   height: 10px;
@@ -349,12 +348,12 @@ nav .open-menu {
   place-content: center;
 }
 #testimonials #carouselExampleIndicators2 .carousel-control-next, #testimonials #carouselExampleIndicators2 .carousel-control-prev {
-  width: 5%;
+  width: 10%;
   display: grid;
   place-content: center;
   color: #000;
-  opacity: 0.4;
-  font-size: 2.3em;
+  opacity: 0.5;
+  font-size: 2.8em;
 }
 #testimonials #carouselExampleIndicators2 .carousel-inner {
   width: 90%;

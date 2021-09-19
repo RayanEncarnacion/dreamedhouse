@@ -24,8 +24,7 @@
       font-weight: bold;
       font-size: 1.3em;
       color: variables.$lg-accent-clr;
-      margin: 1em 0 0 1rem;
-      font-size: 1rem;
+      margin: 1rem 0 0 1rem;
     }
 
     address {
@@ -39,15 +38,15 @@
     display: grid;
     place-content: center;
     color: #fff;
-    opacity: 0.8;
-    font-size: 2.3em;
+    opacity: 0.9;
+    font-size: 2.8em;
   }
 
   & .carousel-control-prev {
-    padding-left: 12px;
+    padding-left: 1.5rem;
   }
   & .carousel-control-next {
-    padding-right: 12px;
+    padding-right: 1.5rem;
   }
 
   .carousel-indicators {
