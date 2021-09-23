@@ -1,0 +1,58 @@
+@use "../variables";
+
+footer {
+  width: 100vw;
+  flex-direction: column;
+  gap: 1.5em;
+  padding: 2em 0;
+
+  .social-media {
+    color: variables.$accent-clr;
+    font-size: 1.5em;
+    gap: 1em;
+
+    @media (min-width: variables.$tablet) {
+      margin-top: 1em;
+    }
+
+    img {
+      object-fit: cover;
+      width: 100%;
+      max-width: 40px;
+    }
+  }
+
+  .footer-links {
+    margin: 1.5em auto 0;
+
+    ul {
+      text-align: center;
+      padding: 0;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      column-gap: 1em;
+      margin: 0 auto;
+
+      @media (min-width: 600px) {
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 2em;
+      }
+      @media (min-width: variables.$desktop) {
+        grid-template-columns: repeat(4, 1fr);
+        column-gap: 2em;
+      }
+
+      li {
+        list-style: none;
+        margin-bottom: 1em;
+
+        a {
+          text-decoration: none;
+          color: variables.$lg-clr;
+          font-size: 1em;
+          font-weight: bold;
+        }
+      }
+    }
+  }
+}

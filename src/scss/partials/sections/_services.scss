@@ -1,0 +1,45 @@
+@use '../variables';
+
+.services-card-container {
+  gap: 4em;
+  align-items: center;
+  justify-content: center;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media (min-width: variables.$tablet) {
+    row-gap: 5em;
+    column-gap: 2em;
+  }
+
+  @media (min-width: variables.$desktop) {
+    column-gap: 1em;
+  }
+  @media (min-width: variables.$xl-desktop) {
+    column-gap: 6em;
+  }
+
+  .services-card {
+    flex-direction: column;
+    gap: 1em;
+    width: 100%;
+    max-width: 300px;
+
+    .card-text {
+      text-align: center;
+      width: 90%;
+    }
+
+    h3 {
+      margin-bottom: 0.7em;
+    }
+
+    .accent-btn {
+      font-weight: bold;
+      color: variables.$lg-clr;
+      width: max-content;
+      margin: 1em auto 0;
+    }
+  }
+}

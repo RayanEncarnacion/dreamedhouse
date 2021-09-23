@@ -1,0 +1,34 @@
+@use '../variables';
+
+.company-info {
+  background-color: variables.$md-clr;
+
+  .info-container {
+    margin-top: 4em;
+    gap: 0.7em;
+    max-width: 800px;
+    margin: 4em auto 0;
+
+    p {
+      width: 95%;
+      margin: 0 auto;
+    }
+
+    ul {
+      margin: 1em 0 1em 1.5em;
+      gap: 0.7em;
+      padding-left: 0;
+
+      li {
+        width: 90%;
+      }
+    }
+
+    .learn-more {
+      margin: 1em auto 0;
+      font-size: 1em;
+      font-weight: bold;
+      color: variables.$lg-clr;
+    }
+  }
+}

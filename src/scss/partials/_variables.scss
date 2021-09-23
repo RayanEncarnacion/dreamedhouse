@@ -1,7 +1,17 @@
+// Fonts
 $prm-ft: 'Roboto', sans-serif;
 $scdr-ft: 'Playfair Display', serif;
+
+// Colors
 $accent-clr: hsl(183, 79%, 29%);
 $lg-accent-clr: hsl(183, 79%, 50%);
 $drk-clr: hsla(0, 0%, 0%, 0.8);
 $lg-clr: hsl(0, 0%, 99%);
 $md-clr: hsl(0, 0%, 97%);
+
+// Media queries
+$phone: 375px;
+$tablet: 768px;
+$xl-tablet: 930px;
+$desktop: 1024px;
+$xl-desktop: 1400px;

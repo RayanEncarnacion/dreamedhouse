@@ -16,6 +16,12 @@
     right: 15px;
     color: variables.$drk-clr;
     font-size: 1.5em;
+
+    @media (min-width: variables.$tablet) {
+      font-size: 2em;
+      top: 0.8em;
+      right: 1em;
+    }
   }
 
   .menu-list {
@@ -26,12 +32,24 @@
     li {
       margin-top: 1em;
       list-style-type: none;
-      font-size: 1.2em;
       font-weight: bold;
 
       .menu-link {
         text-decoration: none;
         color: variables.$drk-clr;
+        font-size: 1.1em;
+      }
+    }
+
+    @media (min-width: variables.$tablet) {
+      margin-top: 8em;
+
+      li {
+        margin-top: 1.5em;
+      }
+
+      li .menu-link {
+        font-size: 1.2em;
       }
     }
   }

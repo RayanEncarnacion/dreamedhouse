@@ -4,17 +4,23 @@
   "description": "",
   "scripts": {
     "start": "parcel src/index.html",
+    "sass": "sass src/scss/main.scss src/css/main.css",
+    "prefix": "postcss src/css/main.css --use autoprefixer -d src/",
+    "watch": "sass --watch src/scss/main.scss src/main.css",
     "build": "parcel build src/index.html"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "browserslist": "last 4 versions",
   "dependencies": {
     "parcel": "^2.0.0-rc.0",
     "sass": "^1.39.2"
   },
   "devDependencies": {
     "@parcel/transformer-image": "^2.0.0-rc.0",
-    "@parcel/transformer-sass": "^2.0.0-rc.0"
+    "@parcel/transformer-sass": "^2.0.0-rc.0",
+    "autoprefixer": "^10.3.4",
+    "postcss-cli": "^8.3.1"
   }
 }

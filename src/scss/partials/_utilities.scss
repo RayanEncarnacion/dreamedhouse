@@ -1,4 +1,4 @@
-@use "variables";
+@use 'variables';
 
 .app-container {
   width: 100vw;
@@ -6,8 +6,14 @@
 }
 
 .logo {
-  font-size: 1.6em;
+  font-size: 1.4em;
   font-weight: 800;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.copyright {
+  font-size: 0.9em;
+  font-weight: bold;
   font-family: 'Montserrat', sans-serif;
 }
 
@@ -18,6 +24,9 @@
 
 .lg {
   color: variables.$lg-clr;
+}
+.md {
+  color: variables.$md-clr;
 }
 
 .lg-bg {
@@ -32,26 +41,46 @@
 }
 
 .accent {
-  color: variables.$accent-clr;
+  color: variables.$accent-clr !important;
 }
 
 .lg-accent {
-  color: variables.$lg-accent-clr;
+  color: variables.$lg-accent-clr !important;
 }
 
 // Padding and margin classes
 .sides-padding {
   padding-right: 5%;
   padding-left: 5%;
+
+  @media (min-width: variables.$tablet) {
+    padding-right: 3%;
+    padding-left: 3%;
+  }
 }
 
 .tb-padding {
-  padding-top: 5em;
-  padding-bottom: 5em;
+  padding-top: 3em;
+  padding-bottom: 3em;
+
+  @media (min-width: variables.$tablet) {
+    padding-top: 5em;
+    padding-bottom: 5em;
+  }
 }
 
 .container-margin {
   margin-top: 4em;
+  margin-bottom: 4em;
+
+  @media (min-width: variables.$tablet) {
+    margin-top: 5em;
+    margin-bottom: 5em;
+  }
+  @media (min-width: variables.$desktop) {
+    margin-top: 6em;
+    margin-bottom: 6em;
+  }
 }
 
 // Sections classes
@@ -75,7 +104,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.65);
+  background-color: rgba(0, 0, 0, 0.8);
   z-index: -5;
 }
 
@@ -86,7 +115,8 @@
   border: none;
   outline: none;
   padding: 2px 8px;
-  font-size: 1.2em;
+  margin-bottom: 0.5rem;
+  font-size: 1.3em;
   background-color: transparent;
 }
 

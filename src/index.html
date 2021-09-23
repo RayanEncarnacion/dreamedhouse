@@ -25,7 +25,7 @@
       crossorigin="anonymous"
     ></script>
     <!-- CSS styles -->
-    <link rel="stylesheet" href="/src/scss/main.scss" />
+    <link rel="stylesheet" href="/src/main.css" />
     <!-- JavaScript -->
     <script type="module" src="/src/app.js"></script>
   </head>
@@ -33,7 +33,7 @@
     <div class="app-container">
       <header class="sides-padding">
         <nav>
-          <h1 class="logo">DreamedHouse</h1>
+          <h1 id="logo" class="logo">DreamedHouse</h1>
           <button class="menu-btn open-menu">
             <i class="fas fa-bars"></i>
           </button>
@@ -42,13 +42,26 @@
               <i class="far fa-window-close"></i>
             </button>
             <ul class="menu-list">
-              <li><a class="menu-link" href="/">Home</a></li>
+              <li><a class="menu-link" href="#logo">Home</a></li>
+              <li><a class="menu-link" href="#how">How it works</a></li>
               <li><a class="menu-link" href="#properties">Properties</a></li>
               <li><a class="menu-link" href="#agents">Agents</a></li>
               <li><a class="menu-link" href="#about">About</a></li>
+              <li>
+                <a class="menu-link" href="#testimonials">Testimonials</a>
+              </li>
               <li><a class="menu-link" href="#contact">Contact</a></li>
             </ul>
           </div>
+          <!-- Tablet and up -->
+
+          <ul class="large-menu">
+            <li><a href="#properties" class="lg-link">Properties</a></li>
+            <li><a href="#about" class="lg-link">About</a></li>
+            <li><a href="#services" class="lg-link">Services</a></li>
+            <li><a href="#testimonials" class="lg-link">Testimonials</a></li>
+            <li><a href="#contact" class="lg-link">Contact us</a></li>
+          </ul>
         </nav>
 
         <div class="header-text">
@@ -59,11 +72,12 @@
           </p>
         </div>
         <div class="overlay"></div>
+        <p class="scroll-text lg">SCROLL DOWN <span>⟱</span></p>
       </header>
 
       <!-- How it works section -->
 
-      <section id="first-section" class="lg-bg sides-padding tb-padding">
+      <section id="how" class="lg-bg sides-padding tb-padding">
         <h2 class="section-title">How it works</h2>
         <div class="container-margin flex cards-container">
           <div class="flex-card flex">
@@ -80,6 +94,11 @@
             <i class="fas fa-chart-line"></i>
             <h3>Investing</h3>
             <p>Invest in your family future by owning your dreamed house.</p>
+          </div>
+          <div class="flex-card flex">
+            <i class="fas fa-search"></i>
+            <h3>Investing</h3>
+            <p>Find the best location for the house of your dreams.</p>
           </div>
         </div>
       </section>
@@ -124,7 +143,7 @@
           </div>
 
           <div class="carousel-inner">
-            <div class="carousel-item active">
+            <div class="carousel-item active" data-bs-interval="false">
               <div class="carousel-card">
                 <img
                   src="/src/images/properties/image1-lg.jpg"
@@ -136,7 +155,7 @@
                 <address>Lorem ipsum dolor sit amet.</address>
               </div>
             </div>
-            <div class="carousel-item">
+            <div class="carousel-item" data-bs-interval="false">
               <div class="carousel-card">
                 <img
                   src="/src/images/properties/image2-lg.jpg"
@@ -148,7 +167,7 @@
                 <address>Lorem ipsum dolor sit amet.</address>
               </div>
             </div>
-            <div class="carousel-item">
+            <div class="carousel-item" data-bs-interval="false">
               <div class="carousel-card">
                 <img
                   src="/src/images/properties/image3-lg.jpg"
@@ -160,7 +179,7 @@
                 <address>Lorem ipsum dolor sit amet.</address>
               </div>
             </div>
-            <div class="carousel-item">
+            <div class="carousel-item" data-bs-interval="false">
               <div class="carousel-card">
                 <img
                   src="/src/images/properties/image4-lg.jpg"
@@ -285,7 +304,7 @@
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea
                 minus molestias assumenda aliquid, exercitationem est!.
               </p>
-              <p class="accent-btn">Learn more</p>
+              <button class="accent-btn">Learn more</button>
             </div>
           </div>
           <div class="services-card flex">
@@ -296,7 +315,7 @@
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea
                 minus molestias assumenda aliquid, exercitationem est!.
               </p>
-              <p class="accent-btn">Learn more</p>
+              <button class="accent-btn">Learn more</button>
             </div>
           </div>
           <div class="services-card flex">
@@ -307,7 +326,7 @@
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea
                 minus molestias assumenda aliquid, exercitationem est!.
               </p>
-              <p class="accent-btn">Learn more</p>
+              <button class="accent-btn">Learn more</button>
             </div>
           </div>
           <div class="services-card flex">
@@ -318,7 +337,7 @@
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea
                 minus molestias assumenda aliquid, exercitationem est!.
               </p>
-              <p class="accent-btn">Learn more</p>
+              <button class="accent-btn">Learn more</button>
             </div>
           </div>
           <div class="services-card flex">
@@ -329,7 +348,7 @@
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea
                 minus molestias assumenda aliquid, exercitationem est!.
               </p>
-              <p class="accent-btn">Learn more</p>
+              <button class="accent-btn">Learn more</button>
             </div>
           </div>
           <div class="services-card flex">
@@ -340,7 +359,7 @@
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea
                 minus molestias assumenda aliquid, exercitationem est!.
               </p>
-              <p class="accent-btn">Learn more</p>
+              <button class="accent-btn">Learn more</button>
             </div>
           </div>
         </div>
@@ -485,13 +504,20 @@
         </div>
         <div class="footer-links">
           <ul class="footer-list">
-            <li><a class="footer-link" href="/">Home</a></li>
+            <li><a class="footer-link lg-accent" href="#logo">Home</a></li>
+            <li><a class="footer-link" href="#how">How it works</a></li>
             <li><a class="footer-link" href="#properties">Properties</a></li>
             <li><a class="footer-link" href="#agents">Agents</a></li>
             <li><a class="footer-link" href="#about">About</a></li>
+            <li><a class="footer-link" href="#services">Services</a></li>
+            <li>
+              <a class="footer-link" href="#testimonials">Testimonials</a>
+            </li>
             <li><a class="footer-link" href="#contact">Contact</a></li>
           </ul>
         </div>
+
+        <p class="lg-accent copyright">@2021 Rayan Encarnacíon</p>
       </footer>
     </div>
   </body>
