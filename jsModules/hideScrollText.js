@@ -14,3 +14,7 @@ export const navObserver = new IntersectionObserver(hideScrollText, {
   root: null,
   threshold: 0,
 });
+
+export default function () {
+  navObserver.observe(nav);
+}

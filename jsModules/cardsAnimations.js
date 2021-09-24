@@ -1,59 +1,73 @@
-const how = document.querySelector('#how');
-const agents = document.querySelector('#agents');
-const services = document.querySelector('#services');
+import { gsap } from 'gsap';
 
-// cards
-const howCards = how.querySelectorAll('.flex-card');
-const agentsCards = agents.querySelectorAll('.agent-card');
-const servicesCards = services.querySelectorAll('.services-card');
+const howCards = document.querySelectorAll('.flex-card');
+const servicesCards = document.querySelectorAll('.services-card');
+const agentsCards = document.querySelectorAll('.agent-card');
+const allCards = document.querySelectorAll(
+  '.flex-card, .services-card, .agent-card'
+);
 
-export const cardsContainers = [how, services, agents];
+const how = document.getElementById('how');
+const services = document.getElementById('services');
+const agents = document.getElementById('agents');
+const cardsContainers = document.querySelectorAll('#how, #services, #agents');
 
-export const hideCards = () => {
-  howCards.forEach((card, i) => {
-    card.style.transition = `all .5s ${i * 0.3}s linear`;
-    card.style.opacity = 0;
-    card.style.transform = `translateY(150px)`;
-  });
-  agentsCards.forEach((card, i) => {
-    card.style.transition = `all .5s ${i * 0.3}s linear`;
-    card.style.opacity = 0;
-    card.style.transform = `translateX(300%)`;
-  });
-  servicesCards.forEach((card, i) => {
-    card.style.transition = `all .5s ${i * 0.3}s linear`;
-    card.style.opacity = 0;
-    card.style.transform = `translateY(150px)`;
-  });
+const animateHow = () => {
+  gsap.fromTo(
+    '.flex-card',
+    { y: 100 },
+    { y: 0, opacity: 1, stagger: 0.3, duration: 1.2 }
+  );
+  containersObserver.unobserve(how);
 };
 
-const showVerticalCards = card => {
-  card.style.opacity = 1;
-  card.style.transform = `translateY(0)`;
-};
-const showHorizontalCards = card => {
-  card.style.opacity = 1;
-  card.style.transform = `translateX(0)`;
-};
-
-const showAllCards = e => {
-  const [observerEntry] = e;
-
-  if (!observerEntry.isIntersecting) return;
-
-  if (observerEntry.target.id === 'how') {
-    howCards.forEach(card => showVerticalCards(card));
-    cardsObserver.unobserve(how);
-  } else if (observerEntry.target.id === 'services') {
-    servicesCards.forEach(card => showVerticalCards(card));
-    cardsObserver.unobserve(services);
-  } else {
-    agentsCards.forEach(card => showHorizontalCards(card));
-    cardsObserver.unobserve(agents);
-  }
+const animateServices = () => {
+  gsap.fromTo(
+    '.services-card',
+    { y: 100 },
+    { y: 0, opacity: 1, stagger: 0.3, duration: 1.2 }
+  );
+  containersObserver.unobserve(services);
 };
 
-export const cardsObserver = new IntersectionObserver(showAllCards, {
+const animateAgents = () => {
+  gsap.fromTo(
+    '.agent-card',
+    { x: 200 },
+    { x: 0, opacity: 1, stagger: 0.3, duration: 1.2 }
+  );
+  containersObserver.unobserve(agents);
+};
+
+const animateCards = e => {
+  const [entry] = e;
+  if (!entry.isIntersecting) return;
+
+  console.log(entry);
+
+  const currentContainer = entry.target.id;
+
+  currentContainer === 'how'
+    ? animateHow()
+    : currentContainer === 'services'
+    ? animateServices()
+    : currentContainer === 'agents'
+    ? animateAgents()
+    : '';
+};
+
+const containersObserver = new IntersectionObserver(animateCards, {
   root: null,
   threshold: 0.2,
 });
+
+export default function () {
+  cardsContainers.forEach(container => containersObserver.observe(container));
+  allCards.forEach(card => {
+    card.addEventListener('mouseover', e => {
+      console.log(card);
+      e.target.classList.add('hover');
+      gsap.to('.flex-card', { y: 10 });
+    });
+  });
+}

@@ -10,7 +10,7 @@ const menuTransition = () =>
     ? (overlayMenu.style.transform = 'translateX(0)')
     : (overlayMenu.style.transform = '');
 
-export function menuInit() {
+export default function menuInit() {
   header.addEventListener('click', e => {
     // If the target contains a trigger class show/hide the menu
     if (menuClasses.some(className => e.target.classList.contains(className))) {

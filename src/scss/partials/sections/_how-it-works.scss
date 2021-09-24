@@ -29,6 +29,7 @@
       flex-direction: column;
       row-gap: 1em;
       column-gap: 1em;
+      opacity: 0;
 
       @media (min-width: variables.$desktop) {
         width: 200px;

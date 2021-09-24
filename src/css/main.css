@@ -179,6 +179,7 @@ i:not(.fa-bars, .fa-window-close, .social-icon) {
   border: none;
   border-radius: 2px;
   background-color: #107f84;
+  animation-duration: 1s;
 }
 
 header {
@@ -219,7 +220,7 @@ header .scroll-text span {
     font-size: 1.7em;
   }
   header .header-text {
-    padding: 10em 1.5em;
+    padding: 7em 1.5em;
   }
   header .header-text h1 {
     font-size: 2em;
@@ -230,7 +231,7 @@ header .scroll-text span {
 }
 @media (min-width: 1024px) {
   header .header-text {
-    padding: 12em 1.5em;
+    padding: 10em 1.5em;
   }
 }
 @media (min-width: 1400px) {
@@ -247,6 +248,9 @@ header .scroll-text span {
   }
   header .header-text p {
     font-size: 1.3em;
+  }
+  header .header-text .scroll-text {
+    display: block;
   }
 }
 
@@ -300,7 +304,7 @@ nav .open-menu {
 }
 
 .header-text {
-  padding: 7em 1em;
+  padding: 3em 1em;
   max-width: 43em;
   margin: 0 auto;
   text-align: center;
@@ -396,6 +400,7 @@ nav .open-menu {
   flex-direction: column;
   row-gap: 1em;
   column-gap: 1em;
+  opacity: 0;
 }
 @media (min-width: 1024px) {
   #how .cards-container .flex-card {
@@ -506,6 +511,7 @@ nav .open-menu {
   text-align: left;
   background-color: rgba(0, 0, 0, 0.8);
   border-radius: 2px;
+  opacity: 0;
 }
 .agents-container .agent-card h3,
 .agents-container .agent-card p {
@@ -549,6 +555,7 @@ nav .open-menu {
 .company-info .info-container ul {
   margin: 1em 0 1em 1.5em;
   gap: 0.7em;
+  padding-left: 0;
 }
 .company-info .info-container ul li {
   width: 90%;
@@ -589,6 +596,7 @@ nav .open-menu {
   gap: 1em;
   width: 100%;
   max-width: 300px;
+  opacity: 0;
 }
 .services-card-container .services-card .card-text {
   text-align: center;

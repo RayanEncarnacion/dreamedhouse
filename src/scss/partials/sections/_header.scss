@@ -41,7 +41,7 @@ header {
     }
 
     .header-text {
-      padding: 10em 1.5em;
+      padding: 7em 1.5em;
 
       h1 {
         font-size: 2em;
@@ -55,7 +55,7 @@ header {
 
   @media (min-width: variables.$desktop) {
     .header-text {
-      padding: 12em 1.5em;
+      padding: 10em 1.5em;
     }
   }
   @media (min-width: variables.$xl-desktop) {
@@ -137,7 +137,7 @@ nav {
 }
 
 .header-text {
-  padding: 7em 1em;
+  padding: 3em 1em;
   max-width: 43em;
   margin: 0 auto;
   text-align: center;
