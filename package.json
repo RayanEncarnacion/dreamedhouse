@@ -6,7 +6,6 @@
     "start": "parcel src/index.html",
     "sass": "sass src/scss/main.scss src/css/main.css",
     "prefix": "postcss src/css/main.css --use autoprefixer -d src/",
-    "watch": "sass --watch src/scss/main.scss src/main.css",
     "build": "parcel build src/index.html"
   },
   "keywords": [],
