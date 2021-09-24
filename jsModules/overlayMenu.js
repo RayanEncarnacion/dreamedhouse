@@ -11,11 +11,10 @@ const menuTransition = () =>
     : (overlayMenu.style.transform = '');
 
 export default function () {
-  setTimeout(() => (overlayMenu.style.display = 'block'), 2000);
+  setTimeout(() => (overlayMenu.style.display = 'block'), 1000);
   header.addEventListener('click', e => {
-    // If the target contains a trigger class show/hide the menu
-    if (menuClasses.some(className => e.target.classList.contains(className))) {
-      menuTransition();
-    } else return;
+    menuClasses.some(className => e.target.classList.contains(className))
+      ? menuTransition()
+      : '';
   });
 }

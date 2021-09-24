@@ -317,7 +317,7 @@ nav .open-menu {
 }
 
 .menu-overlay {
-  background-color: #fcfcfc;
+  background-color: #f7f7f7;
   position: absolute;
   display: none;
   top: 0;
@@ -355,6 +355,11 @@ nav .open-menu {
   text-decoration: none;
   color: rgba(0, 0, 0, 0.8);
   font-size: 1.1em;
+  transition: color 0.2s ease-in-out;
+}
+.menu-overlay .menu-list li .menu-link:hover {
+  color: #107f84;
+  transition: color 0.2s ease-in-out;
 }
 @media (min-width: 768px) {
   .menu-overlay .menu-list {

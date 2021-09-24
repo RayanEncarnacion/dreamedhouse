@@ -1,7 +1,7 @@
 @use 'variables';
 
 .menu-overlay {
-  background-color: variables.$lg-clr;
+  background-color: variables.$md-clr;
   position: absolute;
   display: none;
   top: 0;
@@ -39,6 +39,12 @@
         text-decoration: none;
         color: variables.$drk-clr;
         font-size: 1.1em;
+        transition: color 0.2s ease-in-out;
+
+        &:hover {
+          color: variables.$accent-clr;
+          transition: color 0.2s ease-in-out;
+        }
       }
     }
 
