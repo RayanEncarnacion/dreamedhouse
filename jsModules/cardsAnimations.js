@@ -43,8 +43,6 @@ const animateCards = e => {
   const [entry] = e;
   if (!entry.isIntersecting) return;
 
-  console.log(entry);
-
   const currentContainer = entry.target.id;
 
   currentContainer === 'how'
@@ -63,11 +61,4 @@ const containersObserver = new IntersectionObserver(animateCards, {
 
 export default function () {
   cardsContainers.forEach(container => containersObserver.observe(container));
-  allCards.forEach(card => {
-    card.addEventListener('mouseover', e => {
-      console.log(card);
-      e.target.classList.add('hover');
-      gsap.to('.flex-card', { y: 10 });
-    });
-  });
 }
