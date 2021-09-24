@@ -4,7 +4,7 @@
   "description": "",
   "scripts": {
     "start": "parcel src/index.html",
-    "dist": "parcel build src/index.html",
+    "build": "parcel build src/index.html",
     "sass": "sass src/scss/main.scss src/css/main.css",
     "prefix": "postcss src/css/main.css --use autoprefixer -d src/"
   },
