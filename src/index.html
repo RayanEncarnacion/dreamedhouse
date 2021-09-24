@@ -24,15 +24,20 @@
       integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
       crossorigin="anonymous"
     ></script>
+    <!-- Animate css -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
     <!-- CSS styles -->
-    <link rel="stylesheet" href="/src/main.css" />
+    <link rel="stylesheet" href="/src/scss/main.scss" />
     <!-- JavaScript -->
     <script type="module" src="/src/app.js"></script>
   </head>
   <body>
     <div class="app-container">
       <header class="sides-padding">
-        <nav>
+        <nav id="navigation">
           <h1 id="logo" class="logo">DreamedHouse</h1>
           <button class="menu-btn open-menu">
             <i class="fas fa-bars"></i>
@@ -42,7 +47,7 @@
               <i class="far fa-window-close"></i>
             </button>
             <ul class="menu-list">
-              <li><a class="menu-link" href="#logo">Home</a></li>
+              <li><a class="menu-link" href="#navigation">Home</a></li>
               <li><a class="menu-link" href="#how">How it works</a></li>
               <li><a class="menu-link" href="#properties">Properties</a></li>
               <li><a class="menu-link" href="#agents">Agents</a></li>
@@ -219,7 +224,7 @@
           <div class="agent-card">
             <img
               class="agent-1"
-              src="/src/images/agents/Peter-parker.jpg"
+              src="/src/images/agents/peter-parker.jpg"
               alt=""
             />
             <h3>Peter Parker</h3>
@@ -228,7 +233,7 @@
           <div class="agent-card">
             <img
               class="agent-2"
-              src="/src/images/agents/Mary Jane.jpg"
+              src="/src/images/agents/mary-jane.jpg"
               alt=""
             />
             <div class="agent-info">
@@ -239,7 +244,7 @@
           <div class="agent-card">
             <img
               class="agent-3"
-              src="/src/images/agents/Monica Lewinsky.jpg"
+              src="/src/images/agents/monica-lewinsky.jpg"
               alt=""
             />
             <h3>Monica Lewinsky</h3>
@@ -248,7 +253,7 @@
           <div class="agent-card">
             <img
               class="agent-4"
-              src="/src/images/agents/Tony-stark.jpg"
+              src="/src/images/agents/tony-stark.jpg"
               alt=""
             />
             <h3>Tony Stark</h3>
@@ -304,7 +309,7 @@
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea
                 minus molestias assumenda aliquid, exercitationem est!.
               </p>
-              <button class="accent-btn">Learn more</button>
+              <button class="accent-btn services-btn">Learn more</button>
             </div>
           </div>
           <div class="services-card flex">
@@ -315,7 +320,7 @@
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea
                 minus molestias assumenda aliquid, exercitationem est!.
               </p>
-              <button class="accent-btn">Learn more</button>
+              <button class="accent-btn services-btn">Learn more</button>
             </div>
           </div>
           <div class="services-card flex">
@@ -326,7 +331,7 @@
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea
                 minus molestias assumenda aliquid, exercitationem est!.
               </p>
-              <button class="accent-btn">Learn more</button>
+              <button class="accent-btn services-btn">Learn more</button>
             </div>
           </div>
           <div class="services-card flex">
@@ -337,7 +342,7 @@
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea
                 minus molestias assumenda aliquid, exercitationem est!.
               </p>
-              <button class="accent-btn">Learn more</button>
+              <button class="accent-btn services-btn">Learn more</button>
             </div>
           </div>
           <div class="services-card flex">
@@ -348,7 +353,7 @@
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea
                 minus molestias assumenda aliquid, exercitationem est!.
               </p>
-              <button class="accent-btn">Learn more</button>
+              <button class="accent-btn services-btn">Learn more</button>
             </div>
           </div>
           <div class="services-card flex">
@@ -359,7 +364,7 @@
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea
                 minus molestias assumenda aliquid, exercitationem est!.
               </p>
-              <button class="accent-btn">Learn more</button>
+              <button class="accent-btn services-btn">Learn more</button>
             </div>
           </div>
         </div>
@@ -504,7 +509,9 @@
         </div>
         <div class="footer-links">
           <ul class="footer-list">
-            <li><a class="footer-link lg-accent" href="#logo">Home</a></li>
+            <li>
+              <a class="footer-link lg-accent" href="#navigation">Home</a>
+            </li>
             <li><a class="footer-link" href="#how">How it works</a></li>
             <li><a class="footer-link" href="#properties">Properties</a></li>
             <li><a class="footer-link" href="#agents">Agents</a></li>
