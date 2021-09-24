@@ -4,9 +4,9 @@
   "description": "",
   "scripts": {
     "start": "parcel src/index.html",
+    "build": "parcel build src/index.html",
     "sass": "sass src/scss/main.scss src/css/main.css",
-    "prefix": "postcss src/css/main.css --use autoprefixer -d src/",
-    "build": "parcel build src/index.html"
+    "prefix": "postcss src/css/main.css --use autoprefixer -d src/"
   },
   "keywords": [],
   "author": "",
