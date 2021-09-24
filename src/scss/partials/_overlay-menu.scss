@@ -1,8 +1,9 @@
-@use "variables";
+@use 'variables';
 
 .menu-overlay {
   background-color: variables.$lg-clr;
   position: absolute;
+  display: none;
   top: 0;
   right: 0;
   width: 50%;

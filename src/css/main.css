@@ -319,6 +319,7 @@ nav .open-menu {
 .menu-overlay {
   background-color: #fcfcfc;
   position: absolute;
+  display: none;
   top: 0;
   right: 0;
   width: 50%;
