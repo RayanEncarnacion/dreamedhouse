@@ -1,5 +1,6 @@
 import { gsap } from 'gsap';
 
+// Cards
 const howCards = document.querySelectorAll('.flex-card');
 const servicesCards = document.querySelectorAll('.services-card');
 const agentsCards = document.querySelectorAll('.agent-card');
@@ -7,6 +8,7 @@ const allCards = document.querySelectorAll(
   '.flex-card, .services-card, .agent-card'
 );
 
+// Containers
 const how = document.getElementById('how');
 const services = document.getElementById('services');
 const agents = document.getElementById('agents');
