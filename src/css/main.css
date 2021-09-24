@@ -183,7 +183,7 @@ i:not(.fa-bars, .fa-window-close, .social-icon) {
 }
 
 header {
-  background-image: url(/src/images/header-bg.jpg);
+  background-image: url(/src/images/header.jpg);
   padding-bottom: 3em;
   background-size: cover;
   background-position: center bottom;
