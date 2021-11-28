@@ -1,6 +1,6 @@
 @use 'variables';
 
-.menu-overlay {
+header nav .menu-overlay {
   background-color: variables.$md-clr;
   position: absolute;
   display: none;
@@ -63,11 +63,10 @@
 
   @media (min-width: variables.$desktop) {
     display: none;
-    visibility: none;
   }
 }
 
-.menu-overlay.active {
+header nav .menu-overlay.active {
   transform: translateX(0);
   transition: transform 0.5s ease-in-out;
 }
