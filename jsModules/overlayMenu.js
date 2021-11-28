@@ -10,8 +10,13 @@ const menuTransition = () =>
     ? (overlayMenu.style.transform = 'translateX(0)')
     : (overlayMenu.style.transform = '');
 
+const toggleMenu = () => {
+  overlayMenu.classList.toggle('active');
+};
+
 export default function () {
   setTimeout(() => (overlayMenu.style.display = 'block'), 1000);
+
   header.addEventListener('click', e => {
     menuClasses.some(className => e.target.classList.contains(className))
       ? menuTransition()
