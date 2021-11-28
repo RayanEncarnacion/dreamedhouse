@@ -1,4 +1,4 @@
-@use "../variables";
+@use '../variables';
 
 form {
   display: flex;
@@ -45,10 +45,14 @@ form {
     color: variables.$lg-clr;
     font-size: 1.1em;
     margin: 1.5em auto 0;
+  }
 
-    @media (min-width: variables.$tablet) {
-      margin-top: 2em;
-    }
+  & .submit-message {
+    color: variables.$accent-clr;
+    margin: 1em 0 0;
+    font-weight: bold;
+    font-size: 0.9em;
+    text-align: center;
   }
 }
 
