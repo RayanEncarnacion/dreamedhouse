@@ -36,10 +36,6 @@ header {
 
   // Header media queries
   @media (min-width: variables.$tablet) {
-    .logo {
-      font-size: 1.7em;
-    }
-
     .header-text {
       padding: 7em 1.5em;
 
