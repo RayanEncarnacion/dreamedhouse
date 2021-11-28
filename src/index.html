@@ -457,13 +457,13 @@
         <h2 class="section-title">Contact Us</h2>
         <div class="container-margin">
           <form class="contact-form">
-            <label class="accent" for="name">Name</label>
-            <input type="text" name="name" />
-            <label class="accent" for="email">Email</label>
-            <input type="text" name="email" />
+            <label class="accent" for="name">Name *</label>
+            <input type="text" required name="name" />
+            <label class="accent" for="email">Email *</label>
+            <input type="text" required name="email" />
             <label class="accent" for="subject">Subject</label>
             <input type="text" name="subject" />
-            <label class="accent" for="subject">Message</label>
+            <label class="accent" for="subject">Message*</label>
             <textarea
               name="message"
               id=""
@@ -472,7 +472,7 @@
               rows="10"
               placeholder="Write your message here..."
             ></textarea>
-            <button class="accent-btn">Send Message</button>
+            <input class="accent-btn" type="submit" value="Send Message" />
           </form>
 
           <div class="address-container flex">
