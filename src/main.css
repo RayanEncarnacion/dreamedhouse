@@ -326,6 +326,7 @@ header nav .menu-overlay {
   background-color: #f7f7f7;
   position: absolute;
   display: none;
+  visibility: hidden;
   top: 0;
   right: 0;
   width: 50%;

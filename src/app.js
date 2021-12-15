@@ -11,4 +11,5 @@ formSubmittion();
 if (window.innerWidth <= 1024)
   setTimeout(() => {
     overlayMenu.style.display = 'block';
+    overlayMenu.style.visibility = 'hidden';
   }, 1000);
