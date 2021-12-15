@@ -381,6 +381,7 @@ header nav .menu-overlay .menu-list li .menu-link:hover {
 @media (min-width: 1024px) {
   header nav .menu-overlay {
     display: none;
+    visibility: hidden;
   }
 }
 

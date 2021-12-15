@@ -1,5 +1,5 @@
 const header = document.querySelector('header');
-const overlayMenu = document.querySelector('.menu-overlay');
+export const overlayMenu = document.querySelector('.menu-overlay');
 // Classes that trigger the menu to show/hide
 const menuClasses = ['fas', 'far', 'menu-btn', 'menu-link'];
 
@@ -11,9 +11,4 @@ export default function () {
       ? menuTransition()
       : '';
   });
-
-  if (window.innerWidth <= 1024)
-    setTimeout(() => {
-      overlayMenu.style.display = 'block';
-    }, 1000);
 }
